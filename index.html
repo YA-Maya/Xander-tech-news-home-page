@@ -10,21 +10,35 @@
 </head>
 <body>
   <!--Nav and Logo-->
-    <nav>
-        <div class="logo">
-          <a href="#" ><img href="#" src="https://raw.githubusercontent.com/OliverCadman/xander-mini-projects/c6e37bc7cc18f5babca0ea7dc64330b9b0467945/news-homepage-main/assets/images/logo.svg" alt="A black W logo"></a>
-          </div>
-      <!---  <input type="checkbox" id="menu-toggle"> 
-        <label for="menu-toggle" class="menu-icon">&#9776;</label> -->
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
+  <header class="header">
+    <nav class="navbar">
+          <a  href="#"  class="nav-logo"><img href="#" src="https://raw.githubusercontent.com/OliverCadman/xander-mini-projects/c6e37bc7cc18f5babca0ea7dc64330b9b0467945/news-homepage-main/assets/images/logo.svg" alt="A black W logo"></a>
+       <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">New</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Categories</a>
+          </li>
+        </li>
+       </ul>
+       <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+       </div>
       </nav>
-      
+    </header>
+   <!--Navbar end here-->
       <section>
         <div class="hero">
           <img src="https://github.com/OliverCadman/xander-mini-projects/blob/main/news-homepage-main/assets/images/image-web-3-mobile.jpg?raw=true" alt=" Colorful block with differnt shape fulling the whole page">
@@ -52,7 +66,7 @@
         </div>
       </section>
       <section>
-        <div class="">
+        <div class="other-articles">
           <h3 class="number">01</h3>
           <img class="article-img" src="https://github.com/OliverCadman/xander-mini-projects/blob/main/news-homepage-main/assets/images/image-retro-pcs.jpg?raw=true" alt="">
           <h5 class="subsection">  Reviving Retro PCs </h5>
@@ -67,4 +81,25 @@
          <p>  How the pandemic has sparked fresh opportunities.</p>
         </div>
       </section>
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+//closing the nav
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+      </script>
 </body>
