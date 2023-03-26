@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--favicon-->
   <link rel="icon" type="image/png"
     href="https://github.com/OliverCadman/xander-mini-projects/blob/main/news-homepage-main/assets/images/favicon-32x32.png?raw=true">
-  <link rel="stylesheet" href="./styling.css">
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="./styling.css"> 
+  <!--Title-->
   <title>News homepage</title>
 </head>
 
@@ -44,81 +46,92 @@
         <span class="bar"></span>
       </div>
     </nav>
+
   </header>
   <!--Navbar end here-->
+
   <!--this section has the hero img, the new section-->
-  <section class="grid-hero">
-    <div class="hero">
+  <div class="grid-wrapper">
+    <section class="main-news grid_1 nested-container">
       <img
-        src="https://github.com/OliverCadman/xander-mini-projects/blob/main/news-homepage-main/assets/images/image-web-3-mobile.jpg?raw=true"
-        alt=" Colorful block with differnt shape fulling the whole page">
-    </div>
-    <div class="new" id="grid-new">
-      <h1>New</h1>
-      <h2> Hydrogen VS Electric Cars</h2>
-      <p> Will hydrogen-fueled cars ever catch up to EVs?</p>
+        src="https://github.com/OliverCadman/xander-mini-projects/blob/main/news-homepage-main/assets/images/image-web-3-desktop.jpg?raw=true"
+        alt="image-web-3-desktop" class="mini_grid_1">
+      <h1 class="mini_grid_2">The Bright Future of Web 3.0?</h1>
+      <article class="mini_grid_3">
+        <p>
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
+          of the people. But is it really fulfilling its promise?
+        </p>
+        <button type="submit">READ MORE</button>
+      </article>
+    </section>
 
-      <h2>The Downsides of AI Artistry</h2>
-      <p> What are the possible adverse effects of on-demand AI image generation?</p>
+    <section class="new grid_2">
+      <h2>New</h2>
+      <article>
+        <h4>
+          <a href="#">Hydrogen VS Electric Cars</a>
+        </h4>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
+      <article>
+        <h4>
+          <a href="#">The Downsides of AI Artistry</a>
+        </h4>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </article>
+      <article>
+        <h4>
+          <a href="#">Is VC Funding Drying Up?</a>
+        </h4>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </article>
+    </section>
 
-
-      <h2>Is VC Funding Drying Up?</h2>
-      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.
-      </p>
-    </div>
-
-    <div class="web-4">
-      <h1 class="web-3"> The Bright Future of Web 3.0? </h1>
-      <div>
-      <p class="promise"> We dive into the next evolution of the web that claims to put the power of the platforms back
-        into the hands of the people.
-        But is it really fulfilling its promise?</p>
-        <button type="button" class="button">Read more</button>
-      </div>
-    </div>
-  </section>
-  <!--this section has the the 3 articles-->
-  <section class="grid-articles">
-    <div class="other-articles">
-      <article class="items">
-        <div class="img-2">
-          <img class="article-img"
-            src="https://github.com/OliverCadman/xander-mini-projects/blob/main/news-homepage-main/assets/images/image-retro-pcs.jpg?raw=true"
-            alt="">
-        </div>
-        <div class="text-article">
-          <h2 class="number">01</h2>
-          <h5 class="subsection"> Reviving Retro PCs </h5>
-          <p> What happens when old PCs are given modern upgrades?</p>
+    <section class="trend-news grid_3 flex-container">
+      <article class="mobile-flex">
+        <img
+          src="https://github.com/OliverCadman/xander-mini-projects/blob/main/news-homepage-main/assets/images/image-retro-pcs.jpg?raw=true"
+          alt="image-retro-pc">
+        <div>
+          <span>01</span>
+          <h4>
+            <a href="#">Reviving Retro PCs</a>
+          </h4>
+          <p>What happens when old PCs are given modern upgrades?</p>
         </div>
       </article>
-      <article class="items">
-        <div class="img-2">
-          <img class="article-img"
-            src="https://github.com/OliverCadman/xander-mini-projects/blob/main/news-homepage-main/assets/images/image-top-laptops.jpg?raw=true"
-            alt="">
-        </div>
-        <div class="text-article">
-          <h3 class="number">02</h3>
-          <h5 class="subsection"> Top 10 Laptops of 2022</h5>
-          <p> Our best picks for various needs and budgets.</p>
-        </div>
-      </article>
-      <article class="items">
-        <div class="img-2">
-          <img class="article-img"
-            src="https://github.com/OliverCadman/xander-mini-projects/blob/main/news-homepage-main/assets/images/image-gaming-growth.jpg?raw=true"
-            alt="">
-        </div>
-        <div class="text-article">
-          <h2 class="number">03</h2>
-          <h5 class="subsection">The Growth of Gaming</h5>
-          <p> How the pandemic has sparked fresh opportunities.</p>
+
+      <article class="mobile-flex">
+        <img
+          src="https://github.com/OliverCadman/xander-mini-projects/blob/main/news-homepage-main/assets/images/image-top-laptops.jpg?raw=true"
+          alt="image-top-laptop">
+        <div>
+          <span>02</span>
+          <h4>
+            <a href="#">Top 10 Laptops of 2022</a>
+          </h4>
+          <p>Our best picks for various needs and budgets.</p>
         </div>
       </article>
-    </div>
-  </section>
+      <article class="mobile-flex">
+        <img
+          src="https://github.com/OliverCadman/xander-mini-projects/blob/main/news-homepage-main/assets/images/image-gaming-growth.jpg?raw=true"
+          alt="image-gaming-growth">
+        <div>
+          <span>03</span>
+          <h4>
+            <a href="#">The Growth of Gaming</a>
+          </h4>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+
+    </section>
   </div>
+
+
+
   <!--JavaScrip for the NavBar-->
   <script>
     const hamburger = document.querySelector(".hamburger");
@@ -142,3 +155,4 @@
     }
   </script>
 </body>
+</html>
