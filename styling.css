@@ -118,7 +118,6 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: var(--black);
-
 }
 
 .nav-link {
@@ -137,6 +136,10 @@ a {
 }
 .header {
   border-bottom: 1px solid var(--black);
+}
+.hamhurger{
+  display: flex;
+  text-align: left;  
 }
 
 .hamburger.active .bar:nth-child(2) {
